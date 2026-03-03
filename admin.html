@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="fa">
+<head>
+<meta charset="UTF-8">
+<title>Admin</title>
+<link rel="stylesheet" href="style.css"><script>
+const ADMIN_PASS="123456";
+
+function login(){
+
+let p=document.getElementById("pass").value;
+
+if(p===ADMIN_PASS){
+window.location="publish.html";
+}else{
+alert("پسورد غلط");
+}
+
+}
+</script></head><body><div class="admin-box"><h2>🔐 ورود ادمین</h2><input type="password" id="pass" placeholder="پسورد">
+<br><br><button onclick="login()">داخل شدن</button>
+
+</div></body>
+</html>
